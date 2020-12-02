@@ -1,26 +1,19 @@
-<!--&lt;!&ndash; Default form contact &ndash;&gt;-->
-<!--<div class="container-fluid col-lg-12">-->
-<!--<form class="text-center border border-rounded border-light pt-5 col-lg-4 mx-auto" >-->
-<!--&lt;!&ndash;  [formGroup]="form"&ndash;&gt;-->
-<!--  <p class="h4 mb-4">Sign In</p>-->
+<!-- Default form contact -->
+<div class="container-fluid col-lg-12">
+  <form class="text-center border border-rounded border-light pt-5 col-lg-4 mx-auto" [formGroup]="form">
+    <p class="h4 mb-4">Sign In</p>
 
-<!--  &lt;!&ndash; Name &ndash;&gt;-->
-<!--  <input type="email" name="email"  id="defaultContactFormEmail" mdbInput-->
-<!--         class="form-control mb-4" placeholder="E-Mail">-->
-<!--&lt;!&ndash;  [formControl]="email"&ndash;&gt;-->
-<!--  &lt;!&ndash; Email &ndash;&gt;-->
-<!--  <input type="password" name="password"  id="defaultContactFormPassword" mdbInput-->
-<!--         class="form-control mb-4" placeholder="Password">-->
-<!--&lt;!&ndash;  [formControl]="password"&ndash;&gt;-->
-<!--  &lt;!&ndash; Copy &ndash;&gt;-->
-<!--  <mdb-checkbox  class="mb-4">Remember me</mdb-checkbox>-->
-<!--&lt;!&ndash;  [default]="true"&ndash;&gt;-->
+    <!-- Name -->
+    <input type="email" name="email"  id="defaultContactFormEmail" mdbInput class="form-control mb-4" placeholder="E-Mail" [formControl]="email">
 
-<!--  &lt;!&ndash; Send button &ndash;&gt;-->
-<!--  <button mdbBtn color="white" outline="true" block="true" class="z-depth-0 my-4 waves-effect font-weight-bold button-gradient-purple"-->
-<!--          mdbWavesEffect type="submit" >Send</button>-->
+    <!-- Email -->
+    <input type="password" name="password"  id="defaultContactFormPassword" mdbInput class="form-control mb-4" placeholder="Password" [formControl]="password">
 
-<!--</form>-->
-<!--</div>-->
-<!--&lt;!&ndash; Default form contact &ndash;&gt;-->
+    <!-- Send button -->
+    <button mdbBtn color="white" outline="true" block="true" class="z-depth-0 my-4 waves-effect font-weight-bold button-gradient-purple"
+            mdbWavesEffect type="submit" >Send</button>
+
+  </form>
+</div>
+<!-- Default form contact -->
 

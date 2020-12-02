@@ -1,3 +1,15 @@
+.ng-valid, .ng-valid.required  {
+  border-left: 5px solid deepskyblue; /* green */
+}
+
+.ng-invalid:not(form)  {
+  border-left: 5px solid #f53b7c; /* red */
+}
+
+ng-dirty:not(form) {
+  border-left: 5px solid #f53b7c; /* red */
+}
+
 .border-rounded {
   border-radius: 20px;
 }
