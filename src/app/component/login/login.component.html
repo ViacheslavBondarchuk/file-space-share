@@ -1,0 +1,19 @@
+<!-- Default form contact -->
+<div class="container-fluid col-lg-12">
+  <form class="text-center border border-rounded border-light pt-5 col-lg-4 mx-auto" [formGroup]="form">
+    <p class="h4 mb-4">Sign In</p>
+
+    <!-- Name -->
+    <input type="email" name="email"  id="defaultContactFormEmail" mdbInput class="form-control mb-4" placeholder="E-Mail" [formControl]="email">
+
+    <!-- Email -->
+    <input type="password" name="password"  id="defaultContactFormPassword" mdbInput class="form-control mb-4" placeholder="Password" [formControl]="password">
+
+    <!-- Send button -->
+    <button mdbBtn color="white" outline="true" block="true" class="z-depth-0 my-4 waves-effect font-weight-bold button-gradient-purple"
+            mdbWavesEffect type="submit" >Send</button>
+
+  </form>
+</div>
+<!-- Default form contact -->
+
