@@ -1,0 +1,60 @@
+<!-- Default form contact -->
+<div class="container-fluid col-lg-12">
+  <form class="text-center border border-rounded border-light pt-4 mb-5 col-lg-5 mx-auto" [formGroup]="form">
+
+    <p class="h4 mb-4">Sign Up</p>
+
+    <div class="form-row mb-4">
+      <div class="col">
+        <!-- First name -->
+        <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name" [formControl]="firstname">
+      </div>
+      <div class="col">
+        <!-- Last name -->
+        <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name"  [formControl]="lastname">
+      </div>
+    </div>
+
+
+    <!--Username-->
+    <input type="text" id="defaultRegisterFormUsername" class="form-control mb-4" placeholder="Username" [formControl]="username">
+    <!-- E-mail -->
+    <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail" [formControl]="email">
+
+    <!-- Password -->
+    <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock" [formControl]="password">
+    <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+      At least 8 characters
+    </small>
+
+    <!-- Sign up button -->
+    <button mdbBtn color="white" outline="true" block="true" class="z-depth-0 my-4 waves-effect font-weight-bold button-gradient-purple"
+            mdbWavesEffect type="submit">Sign Up</button>
+
+    <!-- Social register -->
+    <p>or sign up with:</p>
+
+    <a type="button" class="light-blue-text mx-2">
+      <mdb-icon fab icon="facebook"></mdb-icon>
+    </a>
+    <a type="button" class="light-blue-text mx-2">
+      <mdb-icon fab icon="twitter"></mdb-icon>
+    </a>
+    <a type="button" class="light-blue-text mx-2">
+      <mdb-icon fab icon="linkedin"></mdb-icon>
+    </a>
+    <a type="button" class="light-blue-text mx-2">
+      <mdb-icon fab icon="github"></mdb-icon>
+    </a>
+
+    <hr>
+
+    <!-- Terms of service -->
+    <p>By clicking
+      <em>Sign up</em> you agree to our
+      <a href="" target="_blank">terms of service</a></p>
+
+  </form>
+</div>
+<!-- Default form contact -->
+
