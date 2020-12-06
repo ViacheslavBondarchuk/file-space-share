@@ -1,80 +1,73 @@
 <!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark blue-gradient" [containerInside]="false">
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light blue-gradient">
 
-  <div class="container">
+  <!-- Navbar brand -->
+  <mdb-navbar-brand><a class="navbar-brand font-weight-bold" routerLink="/index">File Space</a></mdb-navbar-brand>
 
-    <a class="navbar-brand text-white font-weight-bold" routerLink="/index">File Space</a>
-
-    <!-- Collapse button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
-            aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <!-- Collapsible content -->
+  <links>
 
     <!-- Links -->
-    <div class="collapse navbar-collapse" id="basicExampleNav">
-      <!-- Left -->
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link waves-effect text-white"  >Link 1</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link waves-effect text-white" >Link 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link waves-effect text-white" >Link 3</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link waves-effect text-white" >Link 4</a>
-        </li>
-        <!-- Dropdown -->
-        <li class="nav-item dropdown" dropdown>
-          <a dropdownToggle mdbWavesEffect type="button" class="nav-link text-white dropdown-toggle waves-light" mdbWavesEffect>
-            Select Language<span class="caret"></span></a>
-          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-            <a id="language-english" class="dropdown-item waves-light" mdbWavesEffect href="#">English</a>
-            <a id="language-ukraine" class="dropdown-item waves-light" mdbWavesEffect href="#">Ukraine</a>
-            <a id="language-russian" class="dropdown-item waves-light" mdbWavesEffect href="#">Russian</a>
-          </div>
-        </li>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbWavesEffect>Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbWavesEffect>Pricing</a>
+      </li>
 
-      </ul>
+      <!-- Dropdown -->
+      <li class="nav-item dropdown" dropdown>
+        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+          Select language<span class="caret"></span></a>
+        <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">English</a>
+          <div class="divider dropdown-divider"></div>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Ukrainian</a>
+          <div class="divider dropdown-divider"></div>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Russian</a>
+        </div>
+      </li>
 
-      <!-- Right -->
-      <ul class="navbar-nav nav-flex-icons mt-1">
-        <li class="nav-item">
-          <a href="https://github.com/" class="nav-link waves-effect"
-             target="_blank">
-            <i class="fab fa-github text-white"></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a routerLink="/login"
-             class="nav-link border border-light text-white rounded waves-effect px-4 mr-2">
-            Sign In
-          </a>
-        </li>
-        <li class="nav-item">
-          <a routerLink="/registration"
-             class="nav-link border border-light text-white rounded waves-effect px-4 mr-2">
-            Sign Up
-          </a>
-        </li>
-      </ul>
+    </ul>
+    <!-- Links -->
 
-    </div>
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item">
+        <a href="https://github.com/" class="nav-link waves-effect"
+           target="_blank">
+          <i class="fab fa-github text-white"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/login"
+           class="nav-link border border-light text-white rounded waves-effect px-4 mr-2">
+          Sign In
+        </a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/registration"
+           class="nav-link border border-light text-white rounded waves-effect px-4 mr-2">
+          Sign Up
+        </a>
+      </li>
+    </ul>
+  </links>
+  <!-- Collapsible content -->
 
-  </div>
-
-</nav>
+</mdb-navbar>
+<!--/.Navbar-->
 
 <!--/.Navbar-->
 
 <!-- Main -->
 
 <main class="mt-5" id="main">
-  <div class="container" style="height: 100%">
+  <div class="container">
     <div class="row pt-5">
       <div class="col text-center">
         <!--router-outlet-->

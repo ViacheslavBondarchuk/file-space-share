@@ -1,6 +1,6 @@
 .hidden {
   display: none;
 }
-//#main {
-//  height: 100vh !important;
-//}
+html, body, main {
+  min-height: 100vh;
+}
